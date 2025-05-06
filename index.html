@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coco'yu Tanıyalım</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Başlık -->
+  <header>
+    <h1>Coco'yu Tanıyalım</h1>
+  </header>
+
+  <!-- Coco'nun Fotoğrafları ve Özellikleri -->
+  <section class="gallery">
+    <div class="photo-card">
+      <img src="images/coco1.jpg" alt="Coco 1">
+      <p><strong>Köpeğin Adı:</strong> Coco</p>
+<p><strong>Cinsi:</strong> Bichon Frise</p>
+<p><strong>Yaşı:</strong> 1 yaşında</p>
+<p><strong>Sevdiği Şeyler:</strong> Yeni insanlarla tanışmak, oyun oynamak, kemik yemek</p>
+    </div>
+    <div class="photo-card">
+      <img src="images/coco2.jpg" alt="Coco 2">
+      <p><strong>Sevmediği şeyler:</strong> Elektrikli süpürge</p>
+<p><strong>En sevdiği aile üyesi:</strong> Duygu Alkan ama şüpheli</p>
+<p><strong>En nefret ettiği aile üyesi:</strong> değişiyor</p>
+<p><strong>Eş adayı:</strong> zamanında veterinerdeki bir maltese ile bakışmıştı</p>
+    </div>
+    <div class="photo-card">
+      <img src="images/coco3.jpg" alt="Coco 3">
+      <p><strong>Kısırlık durumu:</strong> Halloldu kısır</p>
+<p><strong>Uyumayı sevdiği yerler:</strong> Duygu'nun yatağı, oturma odasındaki koltuk</p>
+<p><strong>en sevdiği dizi ya da film:</strong> bluey, youtube videoları,kemal sunal filmleri </p>
+<p><strong>Drama Queenlik seviyesi:</strong> Yüzde yüz</p>
+    </div>
+  </section>
+  <section class="quiz-section">
+    <h2>Coco Quiz 🐾</h2>
+    <form id="quiz-form">
+      <!-- Soru 1 -->
+      <div class="question">
+        <p>1. Coco'nun cinsi nedir?</p>
+        <label><input type="radio" name="q1" value="Golden Retriever"> Golden Retriever</label><br>
+        <label><input type="radio" name="q1" value="Bichon Frise"> Bichon Frise</label><br>
+        <label><input type="radio" name="q1" value="Poodle"> Poodle</label><br>
+      </div>
+  
+      <!-- Soru 2 -->
+      <div class="question">
+        <p>2. Coco kaç yaşında?</p>
+        <label><input type="radio" name="q2" value="1"> 1</label><br>
+        <label><input type="radio" name="q2" value="3"> 3</label><br>
+        <label><input type="radio" name="q2" value="5"> 5</label><br>
+      </div>
+  
+      <!-- Soru 3 -->
+      <div class="question">
+        <p>3. Coco ne yemeyi sever?</p>
+        <label><input type="radio" name="q3" value="Balık"> Balık</label><br>
+        <label><input type="radio" name="q3" value="Kemik"> Kemik</label><br>
+        <label><input type="radio" name="q3" value="Marul"> Marul</label><br>
+      </div>
+  
+      <!-- Soru 4 -->
+      <div class="question">
+        <p>4. Coco ne yapmayı sever?</p>
+        <label><input type="radio" name="q4" value="Koşmak"> Koşmak</label><br>
+        <label><input type="radio" name="q4" value="Uyumak"> Uyumak</label><br>
+        <label><input type="radio" name="q4" value="Yeni insanlarla tanışmak"> Yeni insanlarla tanışmak</label><br>
+      </div>
+  
+      <br>
+      <button type="submit">Sonuçları Göster</button>
+    </form>
+    <p id="quiz-result"></p>
+  </section>
+  <!-- Tema Değiştirme Butonu -->
+  <button id="temaButton" style="margin-top: 20px;">Tema Değiştir</button>
+  <section class="gallery">
+    <h2>Coco Galerisi 📸</h2>
+    <div class="gallery-images">
+      <img src="images/coco4.jpg" alt="Coco 4" onclick="openLightbox(this)">
+      <img src="images/coco5.jpg" alt="Coco 5" onclick="openLightbox(this)">
+      <img src="images/coco6.jpg" alt="Coco 6" onclick="openLightbox(this)">
+      <img src="images/coco7.jpg" alt="Coco 7" onclick="openLightbox(this)">
+      <img src="images/coco8.jpg" alt="Coco 8" onclick="openLightbox(this)">
+      <img src="images/coco9.jpg" alt="Coco 9" onclick="openLightbox(this)">
+      <img src="images/coco10.jpg" alt="Coco 10" onclick="openLightbox(this)">
+    </div>
+  </section>
+  
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="">
+  </div>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Coco'nun Dünyası</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+<div class="paw-print"></div>
+  <div class="paw-print"></div>
+  <div class="paw-print"></div>
+  <div class="paw-print"></div>
+  <div class="paw-print"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
